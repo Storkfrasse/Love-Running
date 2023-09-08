@@ -51,7 +51,7 @@ h1 {
     letter-spacing: 4px;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
@@ -114,6 +114,7 @@ main {
 /* Media qurey: tbalets and larger screens */
 
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -121,14 +122,14 @@ main {
         box-shadow: none;
         width: fit-content;
         padding-right: 1rem;
-    } 
+    }
 
-        #menu {
-            display: flex;
-        }
-    
-        #menu>li {
-            padding-left: 1rem;
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
     }
 
     .nav-toggle-label {
@@ -140,14 +141,16 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-        /* Main content */
-        main {
-            /* Push main content down to accommodate larger header */
-            margin-top: 79px;
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+    @media screen and (min-width: 992px) {
+        #menu a:hover {
+            border-bottom: 1px solid #3a3a3a;
         }
-        @media screen and (min-width: 992px) {
-            #menu a:hover{
-                border-bottom: 1px solid #3a3a3a;
-            }
-           
+    }
 }
